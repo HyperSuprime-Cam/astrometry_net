@@ -24,7 +24,7 @@ install()
 {
 	clean_old_install
 
-	( INSTALL_DIR="$PREFIX" make -j$NJOBS install )
+	( INSTALL_DIR="$PREFIX" make -j$NJOBS install SYSTEM_GSL=yes GSL_INC="-I${GSL_DIR}/include" GSL_LIB="-L${GSL_DIR}/lib -lgsl -lgslcblas" WCSLIB_INC="-I${WCSLIB_DIR}/includel/wcslib" WCSLIB_LIB="-L${WCSLIB_DIR}/lib -lwcs" )
 
 	install_ups
 }
