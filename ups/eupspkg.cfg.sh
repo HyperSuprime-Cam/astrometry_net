@@ -15,8 +15,7 @@ prep()
 	# Apply the extra patches if building with clang
 	detect_compiler
 	if [[ $COMPILER_TYPE == clang ]]; then
-		msg "clang detected: applying clang-make-depend-bug.patch"
-		patch -s -p1 < ./patches/clang/clang-make-depend-bug.patch
+		msg "no clang patches detected"
 	fi
 }
 
