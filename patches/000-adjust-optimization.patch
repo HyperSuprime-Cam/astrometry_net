@@ -1,0 +1,11 @@
+--- a/Makefile	2015-09-13 07:54:57.000000000 -0500
++++ b/Makefile	2015-10-11 13:49:59.286730846 -0500
+@@ -21,7 +21,7 @@
+ 
+ # Turn off optimisation?  If the following line is commented-out, the default
+ # is to turn optimization on.  See util/makefile.common for details.
+-#export OPTIMIZE = no
++export OPTIMIZE = no
+ 
+ all:
+ 
